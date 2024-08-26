@@ -18,7 +18,7 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body class="bg-[] text-black">
+  <body class="">
     <section class="bg-gradient-to-b from-[#F4F4F4] to-[#FEFEFE] px-28">
       <header class="bg-[#F4F4F4]">
         <div class="navbar">
@@ -40,7 +40,7 @@
               </svg>
             </span>
 
-            <a class="btn btn-ghost text-xl p-1 text-[#212121]">Rinterio</a>
+            <a class="btn btn-ghost text-3xl p-1 text-[#212121]">Rinterio</a>
           </div>
           <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1">
@@ -348,7 +348,7 @@
     </section>
 
     <!-- Our Latest Portfolio start here  -->
-    <section class="bg-[white]">
+    <section class="bg-[white] py-14">
       <!-- head section below  -->
       <div class="text-center">
         <div class="gap-4">
@@ -373,12 +373,7 @@
         <div
           class="flex rounded-2xl border-solid border-[#e9e9e9] border-2 col-span-8 order-1 place-items-center"
         >
-          <div
-            class="h-full w-full place-items-center"
-            style="border: 2px solid red"
-          >
-            <img class="my-auto mx-auto" src="assets/img1.png" alt="" />
-          </div>
+          <img class="my-auto mx-auto p-4" src="assets/img1.png" alt="" />
           <div>
             <h1>Commercial</h1>
             <p class="my-4">
@@ -411,11 +406,11 @@
         </div>
 
         <!-- grid card 2 start here -->
-        <div
+        <img
           class="rounded-2xl p-6 border-solid border-[#e9e9e9] border-2 col-span-4 order-2"
-        >
-          <img src="assets/img2.png" alt="" />
-        </div>
+          src="assets/img2.png"
+          alt=""
+        />
 
         <!-- grid card 3 start here -->
         <div
@@ -427,9 +422,7 @@
         <div
           class="flex rounded-2xl border-solid border-[#e9e9e9] border-2 col-span-6 order-4"
         >
-          <div class="p-6 place-items-center">
-            <img class="" src="assets/img1.png" alt="" />
-          </div>
+          <img class="" src="assets/img1.png" alt="" />
           <div>
             <h1>Commercial</h1>
             <p class="my-4">
@@ -470,16 +463,11 @@
       </section>
     </section>
 
-    <br />
-    <br />
-    <br />
-    <br />
-
     <!-- article news section start  -->
-    <section class="w-10/12 mx-auto bg-[#f4f4f4] mb-16">
+    <section class="w-10/12 mx-auto bg-[#f4f4f4] py-14">
       <section class="text-center">
         <div class=" ">
-          <button class="rounded-full bg-[#e5f3d6] p-1 mt-16">
+          <button class="rounded-full bg-[#e5f3d6] p-1">
             <span class="mx-1 text-black">
               <i class="fa-solid fa-arrow-right"></i> </span
             >Rinterio News
@@ -616,28 +604,141 @@
     <!-- article section end here  -->
     <!-- discuss and project section start here  -->
 
-    <section class="w-11/10 bg-[url(assets/bg.jpg)]">
-      <div class="text-center">
-        <button class="rounded-full bg-[#e5f3d6] p-1 mt-16">
-          <span class="mx-1 text-black">
-            <i class="fa-solid fa-arrow-right"></i> </span
-          >Let s Connect
+    <section class="bg-[url(assets/bg.jpg)] py-16">
+      <div class="w-8/12 mx-auto" style="border: 2px solid re">
+        <div class="text-center">
+          <button class="rounded-full bg-[#e5f3d6] p-1">
+            <span class="mx-1 text-black">
+              <i class="fa-solid fa-arrow-right"></i> </span
+            >Let s Connect
+          </button>
+          <h1>Let s Discuss Next Project</h1>
+          <p>
+            he barn house captivates with its blend of rustic charm and modern
+            sophistication, featuring weathered wood, sleek metal accents.
+          </p>
+        </div>
+
+        <!-- this is form  -->
+        <form class="rounded-full space-y-6 my-8">
+          <div class="grid md:grid-cols-2 sm:col-span-1 gap-6">
+            <input
+              type="text"
+              placeholder="First Name*"
+              class="w-full p-4 rounded-full"
+            />
+            <input
+              type="text"
+              placeholder="Last Name*"
+              class="w-full p-4 rounded-full"
+            />
+          </div>
+
+          <div class="grid md:grid-cols-2 sm:col-span-1 gap-6">
+            <input
+              type="text"
+              placeholder="Phone Number*"
+              class="w-full p-4 rounded-full"
+            />
+            <input
+              type="email"
+              placeholder="Email Number*"
+              class="w-full p-4 rounded-full"
+            />
+          </div>
+
+          <div class="gap-4">
+            <textarea
+              placeholder="Write your message here"
+              name="textarea"
+              id="textarea"
+              class="gap-4 w-full h-56 p-4 rounded-3xl"
+            ></textarea>
+          </div>
+        </form>
+
+        <button
+          class="btn btn-primary rounded-3xl bg-[#ABEF5F] border-none w-full"
+        >
+          Book Consult
+          <span class="bg-black rounded-2xl text-white p-1">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-4"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+              />
+            </svg>
+          </span>
         </button>
-        <h1>Let s Discuss Next Project</h1>
-        <p>
-          he barn house captivates with its blend of rustic charm and modern
-          sophistication, featuring weathered wood, sleek metal accents.
-        </p>
       </div>
-
-
-<!-- this is form  -->
-
-
-
-
     </section>
 
-    <!-- discuss and project section start here  -->
+    <!-- discuss and project section end  here  -->
+    <!-- Footer section start here  -->
+    <section class="bg-black py-16">
+      <div class="w-10/12 mx-auto text-center ">
+        <div class="flex gap-2 items-center justify-center text-4xl ">
+          <span class="bg-[#ABEF5F] rounded-2xl text-[#1C1C1C] p-1">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-4"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+              />
+            </svg>
+          </span>
+          Rinterio
+        </div>
+        <p>
+          The barn house captivates with its blend of rustic charm and modern
+          sophistication, featuring weathered wood, sleek metal accents.
+        </p>
+
+        <div class="">
+          <ul class="text-[#ffffff] flex flex-col space-y-4 md:flex-row justify-between items-center">
+            <li><a class="">Home</a></li>
+            <li><a>Service</a></li>
+            <li><a>Portfolio</a></li>
+            <li><a>Blogs</a></li>
+            <li><a>Contact Us</a></li>
+          </ul>
+        </div>
+
+        <button class="btn btn-primary rounded-3xl bg-[#ABEF5F] border-none">
+          Book Consult
+          <span class="bg-black rounded-2xl text-white p-1">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-4"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+              />
+            </svg>
+          </span>
+        </button>
+      </div>
+    </section>
   </body>
 </html>
