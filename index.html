@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>House Design</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
       rel="stylesheet"
@@ -17,13 +23,88 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <style>
+      .inter {
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+      }
+    </style>
   </head>
-  <body class="">
-    <section class="bg-gradient-to-b from-[#F4F4F4] to-[#FEFEFE] px-28">
-      <header class="bg-[#F4F4F4]">
-        <div class="navbar">
-          <div class="navbar-start">
-            <span class="bg-[#ABEF5F] rounded-2xl text-[#1C1C1C] p-1">
+  <body class="inter">
+
+
+
+
+
+
+
+
+
+
+
+    
+    <section class=" bg-[#F4F4F4] ">
+      <nav class="flex justify-between items-center w-11/12 mx-auto mt-8 lg:mt-12 lg:w-10/12 " style="border: 3px solid red;">
+        <!-- NAV START  -->
+        <div class=" flex flex-row justify-center items-center" >
+
+
+          <span class="bg-[#ABEF5F] rounded-full text-[#1C1C1C] h-8 w-8 p-2 lg:h-12 lg:w-12 lg:p-3 ">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-4 lg:size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+              />
+            </svg>
+          </span>
+
+          <a class="btn btn-ghost text-xl lg:text-3xl p-1 text-[#212121]"
+            >Rinterio</a
+          >
+        </div>
+        <!-- NAV END  -->
+        <!-- MENU LISTS START  -->
+        <div class=" w-2/4 hidden lg:inline" >
+          <ul class="flex justify-between " style="border: 3px solid red;">
+            <li><a class="text-[#494949] font-extrabold">Home</a></li>
+            <li><a>Service</a></li>
+            <li><a>Portfolio</a></li>
+            <li><a>Blogs</a></li>
+            <li><a>Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- MENU LISTS END  -->
+        <!-- ICON AND BUTTON START -->
+         <!-- nav right  -->
+          <section class="flex gap-4 justify-center items-center">
+        <div class="flex gap-4 justify-center items-end hidden md:flex" >
+          <span
+            class="bg-[#FFFFFF] rounded-full h-8 w-8 lg:h-12 lg:w-12 flex justify-center items-center"
+          >
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </span>
+          <span
+            class="bg-[#FFFFFF] rounded-full h-8 w-8 lg:h-12 lg:w-12 flex justify-center items-center"
+          >
+            <i class="fa-solid fa-cart-shopping"></i>
+          </span>
+
+          <button
+            class="btn btn-sm lg:btn-primary rounded-3xl h-10 lg:h-12 bg-[#ABEF5F] text-[#1C1C1C] font-extrabold border-none"
+          >
+            Book Consult
+            <span class="bg-black rounded-2xl text-white p-1">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -39,61 +120,43 @@
                 />
               </svg>
             </span>
+          </button>
 
-            <a class="btn btn-ghost text-3xl p-1 text-[#212121]">Rinterio</a>
-          </div>
-          <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal px-1">
-              <li><a class="text-[#494949]">Home</a></li>
-              <li><a>Service</a></li>
-              <li><a>Portfolio</a></li>
-              <li><a>Blogs</a></li>
-              <li><a>Contact Us</a></li>
-            </ul>
-          </div>
-
-          <div class="navbar-end gap-4">
-            <span
-              class="bg-[#FFFFFF] rounded-full h-12 w-12 flex justify-center items-center"
-            >
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </span>
-            <span
-              class="bg-[#FFFFFF] rounded-full h-12 w-12 flex justify-center items-center"
-            >
-              <i class="fa-solid fa-cart-shopping"></i>
-            </span>
-
-            <button
-              class="btn btn-primary rounded-3xl bg-[#ABEF5F] border-none"
-            >
-              Book Consult
-              <span class="bg-black rounded-2xl text-white p-1">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="size-4"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-                  />
-                </svg>
-              </span>
-            </button>
-          </div>
-          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-            <i class="fa-solid fa-bars"></i>
-          </div>
         </div>
-        <!-- navbar close here  -->
-      </header>
+        <!-- ICON AND BUTTON END -->
+         <!-- hambarger menu start  -->
+        <div class="lg:hidden">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </section>
+                 <!-- hambarger menu end  -->
+      </nav>
     </section>
-    <section class="bg-gradient-to-b from-[#F4F4F4] to-[#FEFEFE] px-14">
+    <!-- navbar close here  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- HERO SECTION START  -->
+
+
+    <section class="bg-gradient-to-b from-[#F4F4F4] to-[#FFFFFF] px-14">
       <div class="mx-auto">
         <img class="mx-auto max-h-96 max-w-96" src="assets/banner.png" alt="" />
       </div>
@@ -111,7 +174,7 @@
               et a id nisi.
             </p>
             <button
-              class="btn btn-primary rounded-3xl bg-[#ABEF5F] bg-opacity-50 border-none shadow-slate-950 mb-14"
+              class="btn btn-primary rounded-3xl bg-[#d3f6ad] text-[#1C1C1C] font-extrabold border-none mb-14"
             >
               View Details
               <span class="bg-[#ABEF5F] rounded-2xl text-black p-1">
@@ -136,18 +199,29 @@
       </div>
     </section>
     <!-- header closed  -->
-    <!-- main start  -->
-    <section class="bg-[#F4F4F4] px-28 py-12">
-      <!-- section 1 start  -->
-      <div>
-        <img src="assets/Vector.png" alt="" />
-      </div>
 
-      <!-- final 2 start  -->
-      <section class="flex" style="border: 2px solid red">
-        <div class="w-2/4" style="border: 2px solid red">
-          <div>
-            <div class=" ">
+
+
+
+
+
+
+
+
+
+    <!-- main start  -->
+    <section class="bg-[#F4F4F4] py-12">
+      <!-- body elements  -->
+       <section class="mx-auto w-11/12 lg:w-10/12 ">
+      <!-- section 1 start  -->
+       <div class="hidden lg:block">
+        <img class="" src="assets/Vector.png" alt="" />
+      </div>
+      <!-- final section body  start  -->
+      <section class="lg:flex ">
+        <div class="lg:w-2/4" >
+          <div class="text-center lg:text-left mx-auto"  style="border: 2px solid red">
+            <div class="  ">
               <button
                 class="btn btn-sm bg-[#FFFFFF] py-0 my-4 w-52 rounded-full sm:btn-sm md:btn-md lg:btn-lg text-black"
               >
@@ -157,10 +231,10 @@
               </button>
             </div>
             <div class="">
-              <h1 class="text-3xl text-black font-black">
+              <h1 class="text-2xl lg:text-5xl text-black font-black">
                 We design thoughtful, liveable spaces
               </h1>
-              <p class="text-xs">
+              <p class="text-sm lg:xs">
                 The barn house captivates with its blend of rustic charm and
                 modern sophistication, featuring weathered wood, sleek metal
                 accents.
@@ -169,54 +243,51 @@
           </div>
           <!-- section 1 close  -->
           <!-- section 2 start  -->
-          <div class="gap-4">
+          <div class="gap-4 py-4 flex-col md:flex lg:flex-col ">
             <!-- card 1  -->
-            <div class="card w-11/12 card-side bg-[#FFFFFF] px-3 my-3">
-              <figure style="border: 2px solid red">
+            <div class="flex items-center bg-[#FFFFFF] rounded-xl">
+              <figure class="mx-2">
                 <img src="assets/commercial.png" alt="Album" />
               </figure>
-              <div class="card-body p-0" style="border: 2px solid red">
+              <div class=" p-1">
                 <h2 class="card-title">Commercial</h2>
-                <p>
+                <p class="text-xs">
                   The barn house captivates with its blend of rustic charm and
                   modern
                 </p>
-                <div class="card-actions justify-end"></div>
               </div>
             </div>
             <!-- card 2  -->
-            <div class="card w-11/12 card-side bg-[#FFFFFF] Px-8 py-2">
+            <div class=" flex items-center  bg-[#FFFFFF] rounded-xl">
               <figure class="mx-2">
                 <img src="assets/residential.png" alt="Album" />
               </figure>
-              <div class="card-body p-0">
+              <div class=" p-1">
                 <h2 class="card-title">Residential</h2>
-                <p>
+                <p class="text-xs">
                   The barn house captivates with its blend of rustic charm and
                   modern
                 </p>
-                <div class="card-actions justify-end"></div>
               </div>
             </div>
           </div>
         </div>
         <!-- section 2 close  -->
         <!-- section 3 start  -->
-        <div class="w-2/4 mx-auto my-auto justify-center items-center">
           <img
-            style="border: 2px solid red"
-            class="max-h-96 mx-auto"
+            class="lg:max-h-96 object-cover mx-auto"
             src="assets/Rectangle.png"
             alt=""
           />
-        </div>
       </section>
+    </section>
     </section>
 
     <!-- spapce design close  -->
-
-    <section class="bg-[#FFFFFF] w-10/12 mx-auto rounded-xl py-6">
-      <div class="flex justify-evenly">
+<!-- review start  -->
+<section class="bg-[#F4F4F4] mx-auto py-6">
+    <section class="bg-[#FFFFFF]  w-11/12 lg:10/12 mx-auto rounded-xl p-6 ">
+      <div class="gap-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 ">
         <div class="flex-col items-center justify-center text-center">
           <div class="flex items-center justify-center">
             <svg
@@ -289,13 +360,14 @@
         </div>
       </div>
     </section>
-
+  </section>
     <!-- review section close  -->
 
     <!-- our work process section start  -->
-    <section class="w-10/12 mx-auto text-center my-16">
+     <section class="bg-[#F4F4F4] py-14">
+    <div class="w-10/12 mx-auto bg-[#f4] text-center ">
       <div class="gap-4">
-        <button class="rounded-full bg-[green] p-1">
+        <button class="rounded-full bg-[#FFFFFF] p-1">
           <span class="mx-1 text-black">
             <i class="fa-solid fa-arrow-right"></i> </span
           >how we works
@@ -306,7 +378,7 @@
         The barn house captivates with its blend of rustic charm and modern
         sophistication,featuring weathered wood, sleek metal accents.
       </p>
-      <section class="flex gap-4 text-left">
+      <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-left">
         <!-- its card section  -->
         <section class="bg-[#e7c1d3] p-6 rounded-2xl">
           <div><img src="assets/concept.png" alt="" /></div>
@@ -345,7 +417,10 @@
         <!-- card colse  -->
       </section>
       <!-- work section closer -->
-    </section>
+    </div>
+  </section>
+
+
 
     <!-- Our Latest Portfolio start here  -->
     <section class="bg-[white] py-14">
@@ -367,22 +442,28 @@
 
       <!-- body section below  -->
       <section
-        class="w-10/12 mx-auto grid grid-cols-12 gap-4 place-items-center"
+        class="mx-auto sm:w-11/12 lg:w-10/12 
+        grid 
+        sm:grid-rows-6 sm:grid-cols-1
+        md:grid-cols-2 sm:grid-rows-4
+        lg:grid-cols-12 lg:grid-rows-2 
+        
+        gap-4 place-items-center"
       >
         <!-- card 1 below  -->
         <div
-          class="flex rounded-2xl border-solid border-[#e9e9e9] border-2 col-span-8 order-1 place-items-center"
+          class="h-full w-full lg:flex rounded-2xl border-solid border-[#e9e9e9] border-2 sm:col-span-12 order-1 md:col-span-12 md:order-1 lg:col-span-8 lg:order-1 place-items-center"
         >
-          <img class="my-auto mx-auto p-4" src="assets/img1.png" alt="" />
-          <div>
-            <h1>Commercial</h1>
-            <p class="my-4">
+          <img class="h-auto w-full lg:h-auto lg:w-auto my-auto mx-auto p-4" src="assets/img1.png" alt="" />
+          <div class=" px-10 lg:px-2 ">
+            <h1 class="text-2xl font-bold">Commercial</h1>
+            <p class="py-2">
               The barn house captivates with its blend of rustic charm and
               modern. The barn house captivates with its blend of rustic charm
               and modern .
             </p>
             <div>
-              <button class="btn btn-primary bg-[#ffffff] border-none">
+              <button class="btn btn-primary bg-[#ffffff] text-[black] border-none">
                 View Details
                 <span class="bg-[#ABEF5F] rounded-2xl text-black p-1">
                   <svg
@@ -406,32 +487,39 @@
         </div>
 
         <!-- grid card 2 start here -->
+         <div class="h-full w-full rounded-2xl p-6 border-solid border-[#e9e9e9] border-2 sm:col-span-12 order-2 md:col-span-6 md:order-2 lg:col-span-4 lg:order-2">
         <img
-          class="rounded-2xl p-6 border-solid border-[#e9e9e9] border-2 col-span-4 order-2"
+        class="h-full w-full   my-auto mx-auto"
           src="assets/img2.png"
           alt=""
         />
-
+      </div>
         <!-- grid card 3 start here -->
         <div
-          class="rounded-2xl p-6 border-solid border-[#e9e9e9] border-2 col-span-3 order-3"
+          class="h-full w-full rounded-2xl  p-6 border-solid border-[#e9e9e9] border-2 sm:col-span-12 order-5 md:col-span-6 md:order-3 lg:col-span-3 lg:order-3"
         >
-          <img src="assets/img3.png" alt="" />
+          <img class="h-full w-full  my-auto mx-auto" src="assets/img3.png" alt="" />
         </div>
         <!-- grid card 4 start here -->
         <div
-          class="flex rounded-2xl border-solid border-[#e9e9e9] border-2 col-span-6 order-4"
+          class="h-full w-full lg:flex rounded-2xl border-solid border-[#e9e9e9] border-2 
+          
+          
+          
+          
+          
+          sm:col-span-12 order-4 md:col-span-12 md:order-4 lg:col-span-6 lg:order-4 place-items-center"
         >
-          <img class="" src="assets/img1.png" alt="" />
-          <div>
-            <h1>Commercial</h1>
-            <p class="my-4">
+          <img class="h-auto w-full lg:h-auto lg:w-auto my-auto mx-auto p-4" src="assets/img4.png" alt="" />
+          <div class="px-10 lg:px-2 lg:py-0">
+            <h1 class="text-2xl font-bold">Commercial</h1>
+            <p class="py-2 lg:p-1">
               The barn house captivates with its blend of rustic charm and
               modern. The barn house captivates with its blend of rustic charm
               and modern .
             </p>
             <div>
-              <button class="btn btn-primary bg-[#ffffff] border-none">
+              <button class="btn btn-primary bg-[#ffffff] text-[black] border-none">
                 View Details
                 <span class="bg-[#ABEF5F] rounded-2xl text-black p-1">
                   <svg
@@ -456,60 +544,67 @@
 
         <!-- grid card 5 start here -->
         <div
-          class="rounded-2xl p-6 border-solid border-[#e9e9e9] border-2 col-span-3 order-5"
+          class="h-full w-full rounded-2xl p-4 mx-auto my-auto place-items-center border-solid border-[#e9e9e9] border-2 sm:col-span-12 order-3 md:col-span-12 md:order-5 lg:col-span-3 lg:order-5"
         >
-          <img src="assets/img5.png" alt="" />
+          <img class="h-full w-full lg:min-h-2 lg:min-w-2 mx-auto my-auto" src="assets/img5.png" alt="" />
         </div>
+                <!-- grid card 6 start here -->
+                <div
+                class="w-full rounded-2xl  p-6 border-solid border-[#e9e9e9] border-2 sm:col-span-12 order-6 md:col-span-6 md:order-3 lg:hidden"
+              >
+                <img class="h-full w-full lg:w-auto lg:h-auto my-auto mx-auto" src="assets/img5.png" alt="" />
+              </div>
+              <!-- grid card 6 end here -->
       </section>
     </section>
 
     <!-- article news section start  -->
-    <section class="w-10/12 mx-auto bg-[#f4f4f4] py-14">
+    <section class=" mx-auto bg-[#f4f4f4] py-14">
       <section class="text-center">
         <div class=" ">
-          <button class="rounded-full bg-[#e5f3d6] p-1">
+          <button class="rounded-full bg-[#e5f3d6] p-5 lg:p-1">
             <span class="mx-1 text-black">
               <i class="fa-solid fa-arrow-right"></i> </span
             >Rinterio News
           </button>
         </div>
-        <h1 class="my-4 font-bold text-5xl">Read Our Articles and News</h1>
-        <p class="w-6/12 mx-auto my-7">
+        <h1 class="my-4  text-black font-extrabold text-5xl">Read Our Articles and News</h1>
+        <p class="w-10/12 lg:w-6/12 mx-auto text-2xl">
           The barn house captivates with its blend of rustic charm and modern
           sophistication,featuring weathered wood, sleek metal accents
         </p>
       </section>
-      <section class="flex mx-auto gap-12 justify-center items-center">
+      <section class="w-11/12 lg:flex lg:w-10/12 mx-auto gap-12 justify-center items-center">
         <!-- cards1 start from here  -->
-        <div class="bg-[white] rounded-2xl p-4">
+        <div class="bg-[white] rounded-2xl p-8 my-12">
           <div class="">
-            <img class="mx-auto" src="assets/article1.png" alt="" />
+            <img class="h-full w-full mx-auto" src="assets/article1.png" alt="" />
           </div>
 
           <div class="flex justify-between my-3">
-            <div class="my-2">
-              <i class="fa-solid fa-calendar-days"></i> July14, 2024
+            <div class="my-2 ">
+              <i class="fa-solid fa-calendar-days"></i> <span class="text-2xl mx-4">July14, 2024</span>
             </div>
-            <div><i class="fa-regular fa-user"></i> BY Admin</div>
+            <div><i class="fa-regular fa-user"></i><span class="text-2xl mx-4">By Admin</span> </div>
           </div>
 
-          <h1>How to choose the furniture right of your home.</h1>
-          <p>
+          <h1 class="text-4xl font-bold">How to choose the furniture right of your home.</h1>
+          <p class="text-2xl py-6">
             The barn house captivates with its blend of rustic charm and modern.
           </p>
           <p></p>
 
           <div>
-            <button class="btn btn-primary bg-[#ffffff] border-none">
+            <button class="btn btn-primary bg-[#ffffff] border-none text-black text-3xl">
               Read More
-              <span class="bg-[#ABEF5F] rounded-2xl text-black p-1">
+              <span class="bg-[#ABEF5F] rounded-2xl text-black p-1 ">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
                   stroke="currentColor"
-                  class="size-4"
+                  class="size-8"
                 >
                   <path
                     stroke-linecap="round"
@@ -524,31 +619,35 @@
         <!-- cards1 end from here  -->
 
         <!-- cards2 start from here  -->
-        <div class="bg-[white] rounded-2xl p-4">
-          <div><img class="mx-auto" src="assets/article2.png" alt="" /></div>
-
-          <div class="flex justify-between my-3">
-            <div><i class="fa-solid fa-calendar-days"></i> July14, 2024</div>
-            <div><i class="fa-regular fa-user"></i> BY Admin</div>
+        <div class="bg-[white] rounded-2xl p-8 my-12">
+          <div class="">
+            <img class="h-full w-full mx-auto" src="assets/article2.png" alt="" />
           </div>
 
-          <h1>How to choose the furniture right of your home.</h1>
-          <p>
+          <div class="flex justify-between my-3">
+            <div class="my-2 ">
+              <i class="fa-solid fa-calendar-days"></i> <span class="text-2xl mx-4">July14, 2024</span>
+            </div>
+            <div><i class="fa-regular fa-user"></i><span class="text-2xl mx-4">By Admin</span> </div>
+          </div>
+
+          <h1 class="text-4xl font-bold">How to choose the furniture right of your home.</h1>
+          <p class="text-2xl py-6">
             The barn house captivates with its blend of rustic charm and modern.
           </p>
           <p></p>
 
           <div>
-            <button class="btn btn-primary bg-[#ffffff] border-none">
+            <button class="btn btn-primary bg-[#ffffff] border-none text-black text-3xl">
               Read More
-              <span class="bg-[#ABEF5F] rounded-2xl text-black p-1">
+              <span class="bg-[#ABEF5F] rounded-2xl text-black p-1 ">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
                   stroke="currentColor"
-                  class="size-4"
+                  class="size-8"
                 >
                   <path
                     stroke-linecap="round"
@@ -562,31 +661,35 @@
         </div>
         <!-- cards2 end from here  -->
         <!-- cards3 start from here  -->
-        <div class="bg-[white] rounded-2xl p-4">
-          <div><img class="mx-auto" src="assets/article3.png" alt="" /></div>
-
-          <div class="flex justify-between my-3">
-            <div><i class="fa-solid fa-calendar-days"></i> July14, 2024</div>
-            <div><i class="fa-regular fa-user"></i> BY Admin</div>
+        <div class="bg-[white] rounded-2xl p-8">
+          <div class="">
+            <img class="h-full w-full mx-auto" src="assets/article3.png" alt="" />
           </div>
 
-          <h1>How to choose the furniture right of your home.</h1>
-          <p>
+          <div class="flex justify-between my-3">
+            <div class="my-2 ">
+              <i class="fa-solid fa-calendar-days"></i> <span class="text-2xl mx-4">July14, 2024</span>
+            </div>
+            <div><i class="fa-regular fa-user"></i><span class="text-2xl mx-4">By Admin</span> </div>
+          </div>
+
+          <h1 class="text-4xl font-bold">How to choose the furniture right of your home.</h1>
+          <p class="text-2xl py-6">
             The barn house captivates with its blend of rustic charm and modern.
           </p>
           <p></p>
 
           <div>
-            <button class="btn btn-primary bg-[#ffffff] border-none">
+            <button class="btn btn-primary bg-[#ffffff] border-none text-black text-3xl">
               Read More
-              <span class="bg-[#ABEF5F] rounded-2xl text-black p-1">
+              <span class="bg-[#ABEF5F] rounded-2xl text-black p-1 ">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
                   stroke="currentColor"
-                  class="size-4"
+                  class="size-8"
                 >
                   <path
                     stroke-linecap="round"
@@ -604,16 +707,16 @@
     <!-- article section end here  -->
     <!-- discuss and project section start here  -->
 
-    <section class="bg-[url(assets/bg.jpg)] py-16">
+    <section class="bg-[url(assets/bg.jpg)] bg-no-repeat py-16 bg-cover">
       <div class="w-8/12 mx-auto" style="border: 2px solid re">
         <div class="text-center">
-          <button class="rounded-full bg-[#e5f3d6] p-1">
+          <button class="rounded-full bg-[#e0eed1] text-2xl font-bold p-4 lg:p-2">
             <span class="mx-1 text-black">
               <i class="fa-solid fa-arrow-right"></i> </span
-            >Let s Connect
+            >Let's Connect
           </button>
-          <h1>Let s Discuss Next Project</h1>
-          <p>
+          <h1 class="text-4xl font-extrabold text-black">Let s Discuss Next Project</h1>
+          <p class="text-2xl py-6">
             he barn house captivates with its blend of rustic charm and modern
             sophistication, featuring weathered wood, sleek metal accents.
           </p>
@@ -658,9 +761,9 @@
         </form>
 
         <button
-          class="btn btn-primary rounded-3xl bg-[#ABEF5F] border-none w-full"
+          class="btn btn-primary rounded-3xl bg-[#ABEF5F] text-3xl text-black border-none w-full"
         >
-          Book Consult
+          Send Mail
           <span class="bg-black rounded-2xl text-white p-1">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -684,8 +787,8 @@
     <!-- discuss and project section end  here  -->
     <!-- Footer section start here  -->
     <section class="bg-black py-16">
-      <div class="w-10/12 mx-auto text-center ">
-        <div class="flex gap-2 items-center justify-center text-4xl ">
+      <div class="w-10/12 mx-auto text-center">
+        <div class="flex gap-2 items-center justify-center text-4xl">
           <span class="bg-[#ABEF5F] rounded-2xl text-[#1C1C1C] p-1">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -702,15 +805,18 @@
               />
             </svg>
           </span>
-          Rinterio
+          <span class="text-white">Rinterio</span>
+          
         </div>
-        <p>
+        <p class="w-11/12 lg:w-6/12 mx-auto text-[#737373]">
           The barn house captivates with its blend of rustic charm and modern
           sophistication, featuring weathered wood, sleek metal accents.
         </p>
 
         <div class="">
-          <ul class="text-[#ffffff] flex flex-col space-y-4 md:flex-row justify-between items-center">
+          <ul
+            class="text-[#E9E9E9] flex flex-col space-y-4 md:flex-row justify-between items-center"
+          >
             <li><a class="">Home</a></li>
             <li><a>Service</a></li>
             <li><a>Portfolio</a></li>
@@ -719,7 +825,7 @@
           </ul>
         </div>
 
-        <button class="btn btn-primary rounded-3xl bg-[#ABEF5F] border-none">
+        <button class="btn btn-primary rounded-3xl bg-[#ABEF5F]  text-black font-extrabold w-full lg:w-auto border-none mt-10">
           Book Consult
           <span class="bg-black rounded-2xl text-white p-1">
             <svg
@@ -740,5 +846,27 @@
         </button>
       </div>
     </section>
+
+    <!-- template  -->
+
+    <div class="flex gap-4 m-5 justify-center items-center">
+      <img
+        class="rounded-full h-16 w-16 object-cover"
+        src="images/taheri.jpg"
+        alt=""
+      />
+      <div
+        class="bg-[#f9f4fa] border-solid border-red border-2 rounded-3xl p-2 w-80"
+      >
+        <h3 class="flex text-[1.1rem] font-bold ml-2">
+          Pio Hujur
+          <span class="flex justify-center items-center">
+            <img class="h-3 mx-1" src="images/verified.png" alt="" />
+          </span>
+          <p class="text-blue-600">. Follow</p>
+        </h3>
+        <p class="ml-2">sir, 1 cup dhele dei ?</p>
+      </div>
+    </div>
   </body>
 </html>
